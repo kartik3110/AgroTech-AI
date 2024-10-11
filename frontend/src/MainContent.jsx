@@ -104,6 +104,7 @@ import DiseaseRecognition from './components/DiseaseRecognition';
 import Preloader from "./components/PreLoader";
 import ProgressScrollDown from "./components/ProgressScrollDown";
 import React, { useState, useEffect } from "react";
+import FertilizerCalculator from './components/FertilizerCalculator';
 
 const MainContent = () => {
   UseScrollToTop();
@@ -137,6 +138,7 @@ const MainContent = () => {
               <Route path="/engine/:id" element={<AIEngine />} />
               <Route path="/submit" element={<Submit />} />
               <Route path="/fertilizer" element={<Fertilizer />} />
+              <Route path="/fertilizer_calculator" element={<FertilizerCalculator />} />
               <Route path="/soil" element={<SoilQuality />} />
               <Route path="/Irrigation" element={<Irrigation />} />
               <Route path="/crop_recommendation" element={<CropRotationRecommendation />} />
